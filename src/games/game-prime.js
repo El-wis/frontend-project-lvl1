@@ -1,7 +1,7 @@
 import randomNumber from '../utils.js';
 import game from '../game-engine.js';
 
-export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   let result = '';

@@ -5,3 +5,9 @@ const name = () => {
   return userName;
 };
 export default name;
+
+export const greeting = () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = name();
+  console.log(`Hello, ${userName}`);
+};
