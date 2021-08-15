@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import randomNumber from '../utils.js';
-import { getName } from '../cli.js';
+import { name } from '../cli.js';
 
 export const greatestDevider = (a, b) => {
   let firstNumber = a;
