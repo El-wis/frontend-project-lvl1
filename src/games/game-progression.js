@@ -17,8 +17,8 @@ const getProgression = (start, step) => {
 };
 
 const raund = () => {
-  const start = randomNumber(1, 10);
-  const step = randomNumber(1, 10);
+  const start = randomNumber(1, 100);
+  const step = randomNumber(1, 100);
   const progression = getProgression(start, step);
   const dotsIndex = randomNumber(0, progressionLength - 1);
   const answer = String(progression[dotsIndex]);
