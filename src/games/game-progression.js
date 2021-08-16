@@ -22,7 +22,7 @@ const raund = () => {
   const progression = getProgression(start, step);
   const dotsIndex = randomNumber(0, progressionLength - 1);
   const answer = String(progression[dotsIndex]);
-  progression[dotsIndex] = '...';
+  progression[dotsIndex] = '..';
   const question = progression.join(' ');
   return [question, answer];
 };
