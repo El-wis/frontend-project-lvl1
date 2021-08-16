@@ -16,7 +16,7 @@ const isEvenAnswer = (num) => {
 };
 
 const raund = () => {
-  const question = randomNumber(1, 10);
+  const question = randomNumber(1, 20);
   const answer = String(isEvenAnswer(question));
   return [question, answer];
 };
