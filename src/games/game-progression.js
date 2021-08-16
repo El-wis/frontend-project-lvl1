@@ -9,7 +9,7 @@ const rule = 'What number is missing in the progression?';
 const getProgression = (start, step) => {
   let i = 0;
   const progression = [];
-  while (i < progressionLength - 1) {
+  while (i < progressionLength) {
     // eslint-disable-next-line no-param-reassign
     progression.push(start += step);
     i += 1;
