@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import name from './cli.js';
+import getName from './cli.js';
 
 const game = (rule, raund) => {
   console.log('Welcome to the Brain Games!');
-  const userName = name();
+  const userName = getName();
   console.log(`Hello, ${userName}!`);
   console.log(rule);
   for (let i = 0; i < 3;) {
