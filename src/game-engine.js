@@ -10,14 +10,13 @@ const runGame = (rule, getRaund) => {
     const [question, correctAnswer] = getRaund();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (correctAnswer === answer) {
-      console.log('Correct');
-    } else {
+    if (correctAnswer !== answer) {
       console.log(`Your answer: ${answer} '${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
         Let's try again, ${userName}!`);
       return;
-    }
-  } console.log(`Congratulations, ${userName}!`);
+    } console.log('Correct');
+  }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;

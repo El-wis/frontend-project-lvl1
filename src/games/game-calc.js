@@ -5,7 +5,7 @@ const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
-export const randomOperator = () => {
+export const getRandomOperator = () => {
   const i = randomNumber(0, 2);
   return operators[i];
 };
@@ -30,7 +30,7 @@ export const calc = (a, b, operator) => {
 const getRaund = () => {
   const firstNumber = randomNumber(1, 10);
   const secondNumber = randomNumber(1, 10);
-  const operator = randomOperator();
+  const operator = getRandomOperator();
   const question = `${firstNumber} ${operator} ${secondNumber}`;
   const answer = String(calc(firstNumber, secondNumber, operator));
   return [question, answer];
