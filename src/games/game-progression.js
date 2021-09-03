@@ -1,5 +1,5 @@
 import randomNumber from '../utils.js';
-import game from '../game-engine.js';
+import runGame from '../game-engine.js';
 
 const progressionLength = 10;
 
@@ -16,7 +16,7 @@ const getProgression = (start, step) => {
   } return progression;
 };
 
-const raund = () => {
+const getRaund = () => {
   const start = randomNumber(1, 100);
   const step = randomNumber(1, 100);
   const progression = getProgression(start, step);
@@ -28,6 +28,6 @@ const raund = () => {
 };
 
 const playGame = () => {
-  game(rule, raund);
+  runGame(rule, getRaund);
 };
 export default playGame;

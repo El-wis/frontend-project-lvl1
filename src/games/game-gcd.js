@@ -1,5 +1,5 @@
 import randomNumber from '../utils.js';
-import game from '../game-engine.js';
+import runGame from '../game-engine.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
@@ -15,7 +15,7 @@ const greatestDevider = (a, b) => {
   } return firstNumber + secondNumber;
 };
 
-const raund = () => {
+const getRaund = () => {
   const firstNumber = randomNumber(1, 10);
   const secondNumber = randomNumber(1, 10);
   const question = `${firstNumber} ${secondNumber}`;
@@ -24,6 +24,6 @@ const raund = () => {
 };
 
 const playGame = () => {
-  game(rule, raund);
+  runGame(rule, getRaund);
 };
 export default playGame;

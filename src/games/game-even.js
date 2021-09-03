@@ -1,4 +1,4 @@
-import game from '../game-engine.js';
+import runGame from '../game-engine.js';
 import randomNumber from '../utils.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no"';
@@ -15,13 +15,13 @@ const isEvenAnswer = (num) => {
   return result;
 };
 
-const raund = () => {
+const getRaund = () => {
   const question = randomNumber(1, 20);
   const answer = String(isEvenAnswer(question));
   return [question, answer];
 };
 
 const playGame = () => {
-  game(rule, raund);
+  runGame(rule, getRaund);
 };
 export default playGame;

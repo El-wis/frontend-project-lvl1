@@ -1,4 +1,4 @@
-import game from '../game-engine.js';
+import runGame from '../game-engine.js';
 import randomNumber from '../utils.js';
 
 const rule = 'What is the result of the expression?';
@@ -27,7 +27,7 @@ export const calc = (a, b, operator) => {
   return result;
 };
 
-const raund = () => {
+const getRaund = () => {
   const firstNumber = randomNumber(1, 10);
   const secondNumber = randomNumber(1, 10);
   const operator = randomOperator();
@@ -37,6 +37,6 @@ const raund = () => {
 };
 
 const playGame = () => {
-  game(rule, raund);
+  runGame(rule, getRaund);
 };
 export default playGame;
