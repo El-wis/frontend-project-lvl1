@@ -11,20 +11,16 @@ export const getRandomOperator = () => {
 };
 
 export const calc = (a, b, operator) => {
-  let result;
   switch (operator) {
     case '+':
-      result = a + b;
-      break;
+      return a + b;
     case '-':
-      result = a - b;
-      break;
+      return a - b;
     case '*':
-      result = a * b;
-      break;
+      return a * b;
     default:
+      return null;
   }
-  return result;
 };
 
 const getRaund = () => {
