@@ -13,7 +13,8 @@ const getProgression = (start, step) => {
     // eslint-disable-next-line no-param-reassign
     progression.push(start += step);
     i += 1;
-  } return progression;
+  }
+  return progression;
 };
 
 const getRaund = () => {

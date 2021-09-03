@@ -3,7 +3,7 @@ import runGame from '../game-engine.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const greatestDevider = (a, b) => {
+const getDevider = (a, b) => {
   let firstNumber = a;
   let secondNumber = b;
   while (firstNumber !== 0 && secondNumber !== 0) {
@@ -12,14 +12,15 @@ const greatestDevider = (a, b) => {
     } else {
       secondNumber %= firstNumber;
     }
-  } return firstNumber + secondNumber;
+  }
+  return firstNumber + secondNumber;
 };
 
 const getRaund = () => {
   const firstNumber = randomNumber(1, 10);
   const secondNumber = randomNumber(1, 10);
   const question = `${firstNumber} ${secondNumber}`;
-  const answer = String(greatestDevider(firstNumber, secondNumber));
+  const answer = String(getDevider(firstNumber, secondNumber));
   return [question, answer];
 };
 
