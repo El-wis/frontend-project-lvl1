@@ -6,7 +6,7 @@ const rule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 export const getRandomOperator = () => {
-  const i = randomNumber(0, 2);
+  const i = randomNumber(0, operators.length - 1);
   return operators[i];
 };
 
@@ -19,7 +19,7 @@ export const calc = (a, b, operator) => {
     case '*':
       return a * b;
     default:
-      return null;
+      throw new Error('wrong operator');
   }
 };
 

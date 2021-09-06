@@ -2,7 +2,6 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/El-wis/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/El-wis/frontend-project-lvl1/actions)",
-  "main": "index.js",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -12,14 +11,11 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/El-wis/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Elena Brazhenko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/El-wis/frontend-project-lvl1/issues"
@@ -31,7 +27,6 @@
     "eslint-plugin-import": "^2.23.4"
   },
   "dependencies": {
-    "@hexlet/pairs": "^1.1.1",
     "readline-sync": "^1.4.10"
   }
 }

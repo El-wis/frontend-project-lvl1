@@ -7,12 +7,10 @@ const rule = 'What number is missing in the progression?';
 
 /* Функция, которая генерирует ряд чисел */
 const getProgression = (start, step) => {
-  let i = 0;
   const progression = [];
-  while (i < progressionLength) {
+  for (let i = 0; i < progressionLength; i += 1) {
     // eslint-disable-next-line no-param-reassign
-    progression.push(start += step);
-    i += 1;
+    progression.push(start + step * i);
   }
   return progression;
 };
